@@ -1,4 +1,5 @@
 #!/bin/bash
+:<<!
 echo "hello world!"
 a="hello world!!!!!"
 echo "a is:"
@@ -19,8 +20,8 @@ unset b
 echo $b
 echo ${#name}
 echo ${name:0:5}
-echo `expr index "$name" i`
 echo $name $a
+!
 array=(
 001
 002
@@ -37,4 +38,9 @@ len=${#array[*]}
 echo $len
 len1=${#array2[2]}
 echo $len1
+echo "shell 传递参数实例"；
+echo "执行文件名：$0";
+echo "第一个参数：$1";
+echo "第二个参数：$2";
+echo "第三个参数：$3";
 
