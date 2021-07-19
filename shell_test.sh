@@ -20,3 +20,21 @@ echo $b
 echo ${#name}
 echo ${name:0:5}
 echo `expr index "$name" i`
+echo $name $a
+array=(
+001
+002
+003)
+array2[0]="i"
+array2[1]="am"
+array2[2]="king"
+echo ${array[2]}
+echo ${array2[2]}
+echo ${array2[@]}
+len=${#array[@]}
+echo $len
+len=${#array[*]}
+echo $len
+len1=${#array2[2]}
+echo $len1
+
