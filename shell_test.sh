@@ -200,6 +200,8 @@ do
 	let "i++"
 done
 !
+#case
+:<<!
 casefun(){
 echo "请输入数字"
 read num
@@ -228,5 +230,8 @@ echo "start-----------"
 casefun a b c d e f g h i j k l m 
 echo "返回值：$?"
 echo "end--------------"
-
-
+!
+who > output.txt
+who >> output.txt
+. ./test.sh
+echo $name
